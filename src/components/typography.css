@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "JetBrains Mono Bold";
+  src: url("/src/assets/fonts/JetBrainsMono-Italic-VariableFont_wght.ttf");
+}
+
+@layer component {
+  .heading-l {
+    font-family: "JetBrains Mono Bold";
+    font-size: 32px;
+    line-height: 43px;
+  }
+  .heading-m {
+    font-family: "JetBrains Mono Bold";
+    font-size: 24px;
+    line-height: 31px;
+  }
+  .body {
+    font-family: "JetBrains Mono Bold";
+    font-size: 18px;
+    line-height: 23px;
+  }
+}

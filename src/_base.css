@@ -1,0 +1,13 @@
+@layer base {
+  :root {
+    /* color */
+    --grey-100: #24232c;
+    --grey-200: #979797;
+    --grey-300: #e6e5ea;
+    --black: #18171f;
+    --green: #a4ffaf;
+    --red: #f64a4a;
+    --orange: #fb7c58;
+    --yellow: #f8cd65;
+  }
+}
