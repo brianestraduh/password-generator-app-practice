@@ -15,6 +15,10 @@ const Slider = () => {
 
   return (
     <div>
+      <div>
+        <label htmlFor="slider">Character Length</label>
+        <span>{value}</span>
+      </div>
       <input
         type="range"
         id="slider"
@@ -26,7 +30,6 @@ const Slider = () => {
           background: `linear-gradient(to right, var(--green) ${calculateProgress()}%, var(--black) ${calculateProgress()}%)`,
         }}
       />
-      <span>{value}</span> {/* Display the current value */}
     </div>
   );
 };
