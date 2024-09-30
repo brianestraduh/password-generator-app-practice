@@ -2,12 +2,17 @@
   :root {
     /* color */
     --grey-100: #24232c;
-    --grey-200: #979797;
-    --grey-300: #e6e5ea;
+    --grey-200: #18171f;
+    --grey-300: #979797;
+    --grey-400: #e6e5ea;
+    --white: #e6e5ea;
     --black: #18171f;
     --green: #a4ffaf;
     --red: #f64a4a;
     --orange: #fb7c58;
     --yellow: #f8cd65;
+  }
+  html {
+    background: var(--grey-100);
   }
 }

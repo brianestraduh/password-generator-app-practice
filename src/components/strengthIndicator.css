@@ -1,0 +1,45 @@
+@layer component {
+  .strength-container {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    background-color: black;
+  }
+  .indicator {
+    border-width: 2px;
+    border-style: solid;
+    width: 10px;
+    height: 28px;
+    border-color: rgb(238, 223, 223);
+  }
+  .stren-indicator-container {
+    display: flex;
+    gap: 10px;
+  }
+  .color-bars-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 6px;
+  }
+  .grey-text {
+    color: var(--grey-300);
+  }
+  /* styling based password stength */
+  .strong > * {
+    background-color: var(--green);
+    border-color: var(--green);
+  }
+  .medium > :not(:last-child) {
+    background-color: var(--yellow);
+    border-color: var(--yellow);
+  }
+  .weak > :nth-child(1),
+  .weak > :nth-child(2) {
+    background-color: var(--orange);
+    border-color: var(--orange);
+  }
+  .too-weak > :first-child {
+    background-color: var(--red);
+    border-color: var(--red);
+  }
+}

@@ -3,3 +3,7 @@
 @import url("_base.css");
 @import url("./components/typography.css");
 @import url("./components/slider.css");
+@import url("./components/checkbox.css");
+@import url("./components/strengthIndicator.css");
+@import url("./components/button.css");
+@import url("./components/inputPassword.css");

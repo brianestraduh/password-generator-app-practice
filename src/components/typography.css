@@ -1,6 +1,6 @@
 @font-face {
   font-family: "JetBrains Mono Bold";
-  src: url("/src/assets/fonts/JetBrainsMono-Italic-VariableFont_wght.ttf");
+  src: url("/src/assets/fonts/JetBrainsMono-VariableFont_wght.ttf");
 }
 
 @layer component {
@@ -18,5 +18,10 @@
     font-family: "JetBrains Mono Bold";
     font-size: 18px;
     line-height: 23px;
+    color: var(--grey-300);
+    font-weight: 700;
+  }
+  .white-text {
+    color: var(--white);
   }
 }

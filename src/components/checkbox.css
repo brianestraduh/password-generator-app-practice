@@ -1,0 +1,39 @@
+@layer component {
+  input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent; /* Ensure background is transparent when unchecked */
+  }
+
+  /* Styles for the checked state */
+  input[type="checkbox"]:checked {
+    background-color: var(--green);
+    border-color: var(--green);
+  }
+
+  /* Styles for the checkmark */
+  input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    transform: translate(-50%, -60%) rotate(45deg);
+  }
+  input[type="checkbox"]:hover {
+    border: solid var(--green);
+  }
+  .checkbox-flex {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+  }
+}
