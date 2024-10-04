@@ -50,4 +50,18 @@
     display: flex;
     justify-content: space-between;
   }
+  .slider-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .char-len-text {
+    display: flex;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--grey-400);
+  }
 }

@@ -11,7 +11,7 @@
   .generate-btn {
     background: var(--green);
     color: var(--grey-200);
-    width: 476px;
+    width: 100%;
     height: 65px;
   }
   .generate-btn:hover {

@@ -8,7 +8,7 @@ export default function StrengthIndicator({
 }: StrengthIndicatorProps) {
   return (
     <div className="strength-container">
-      <span className="body grey-text">STRENGTH</span>
+      <span className="body grey-text stren-text-container">STRENGTH</span>
       <div className="stren-indicator-container">
         <span className="heading-m white-text">
           {strengthRankArr[strengthValue]}

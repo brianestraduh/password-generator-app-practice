@@ -1,11 +1,15 @@
 import { useState } from "react";
-
-export default function Slider() {
-  const [value, setValue] = useState(50); // Initial value of the slider
+interface SliderProps {
+  onChange: (value: number) => void;
+}
+export default function Slider({ onChange }: SliderProps) {
+  const [value, setValue] = useState(12); // Initial value of the slider
 
   // Handler to update the value
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
-    setValue(Number(e.target.value));
+    const newValue = Number(e.target.value);
+    setValue(newValue);
+    onChange(newValue); // Call the onChange callback with the new value
   };
 
   // Calculate the percentage to update the background gradient
@@ -14,9 +18,9 @@ export default function Slider() {
   };
 
   return (
-    <div>
+    <div className="slider-container">
       <div className="space-between">
-        <label htmlFor="slider" className="body">
+        <label htmlFor="slider" className="body char-len-text">
           Character Length
         </label>
         <span className="heading-l green">{value}</span>

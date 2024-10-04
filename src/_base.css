@@ -13,6 +13,70 @@
     --yellow: #f8cd65;
   }
   html {
+    background: black;
+    color: white;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  /* styling size and other layouts for tablet and mobile below here */
+  .pass-main-container {
+    /* background: var(--grey-100); */
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .gen-pass-main-container {
+    height: 80px;
     background: var(--grey-100);
+  }
+  .gen-pass-sec-container {
+    display: flex;
+    flex-direction: column;
+    background: var(--grey-100);
+    padding: 25px 25px;
+    gap: 24px;
+  }
+  .checkbox-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  /* media queries to make responsive for tablet */
+  @media (max-width: 768px) {
+    .pass-main-container {
+      width: 100%;
+      padding: 20px;
+    }
+    .gen-pass-main-container {
+      height: auto;
+    }
+    .gen-pass-sec-container {
+      padding: 20px;
+    }
+    .checkbox-container {
+      gap: 15px;
+    }
+  }
+  /* media queries to make responsiove for mobile */
+  @media (max-width: 480px) {
+    .pass-main-container {
+      width: 100%;
+      padding: 15px;
+    }
+    .gen-pass-main-container {
+      height: auto;
+    }
+    .gen-pass-sec-container {
+      padding: 15px;
+    }
+    .checkbox-container {
+      gap: 10px;
+    }
   }
 }
