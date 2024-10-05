@@ -23,6 +23,12 @@
     height: 100vh;
     margin: 0;
   }
+  h1 {
+    display: flex;
+    justify-content: center;
+    padding: 5px 5px;
+    margin: 5px;
+  }
   /* styling size and other layouts for tablet and mobile below here */
   .pass-main-container {
     /* background: var(--grey-100); */
